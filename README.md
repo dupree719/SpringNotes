@@ -56,10 +56,10 @@ Key Annotations:
 @OneToMany - one-to-many mapping means that one row in a table is mapped to multiple rows in another table. Ex: One cart can have many items.
 @ManyToOne - allows for a bidrectional relationship: we are able to access x from y AND also y from x
 
-@Id - 
-@JoinColumn - 
-@Column - 
-@GeneratedValue - 
+@Id -  specifies the primary key of an entity
+@JoinColumn - helps us specify the column we'll use for joining an entity association or element collection
+@Column - used to specify the mapped column for a persistent property or field
+@GeneratedValue - provides for the specification of generation strategies for the values of primary keys
 @Bean - useful if you have a class that requires an instance of another class as a property
 @RequestParam -  allows you to send parameters in the get request and use them in Java
 ```
