@@ -41,6 +41,7 @@ Implements Serializable.
 Setter & Constructor
 
 Setter injection: A matter of calling a setter on a Bean
+Constructor: Where object's constructor is used to inject dependencies
 
 Key Annotations:
 --------------
@@ -60,6 +61,7 @@ Key Annotations:
 @JoinColumn - helps us specify the column we'll use for joining an entity association or element collection
 @Column - used to specify the mapped column for a persistent property or field
 @GeneratedValue - provides for the specification of generation strategies for the values of primary keys
+
 @Bean - useful if you have a class that requires an instance of another class as a property
 @RequestParam -  allows you to send parameters in the get request and use them in Java
 ```
