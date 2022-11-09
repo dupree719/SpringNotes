@@ -65,3 +65,66 @@ Key Annotations:
 @Bean - useful if you have a class that requires an instance of another class as a property
 @RequestParam -  allows you to send parameters in the get request and use them in Java
 ```
+
+API Book Notes:
+
+To make a valid request, the client needs to include four things:
+ 1 URL (Uniform Resource Locator) 
+  In HTTP, a URL is a unique address for a thing (a noun). 
+  
+ 2 Method
+ The request method tells the server what kind of action the client wants
+the server to take.
+
+ 3 List of Headers
+ Headers provide meta-information about a request. They are a simple
+list of items like the time the client sent the request and the size of the
+request body. 
+
+ 4 Body
+ The request body contains the data the client wants to send the server. 
+ 
+ 
+ HTTP Responses: 
+ HTTP responses have a very similar structure to requests. The main difference is that instead of a method and a URL,
+ the response includes a status code. The response headers and body follow the same format as requests.
+ 
+JSON:
+JSON is a very simple format that has two pieces: keys and
+values. Keys represent an attribute about the object being described. A
+pizza order can be an object. It has attributes (keys), such as crust type,
+toppings, and order status. These attributes have corresponding values
+(thick crust, pepperoni, and out-for-delivery).
+
+XML:
+XML has been around since 1996. Like JSON, XML provides a few
+simple building blocks that API makers use to structure their data.The
+main block is called a node. 
+
+OAuth: an authentication scheme that automates the key
+exchange between client and server.
+
+Access Token: a secret that the client obtains upon successfully
+completing the OAuth process.
+
+Scope: permissions that determine what access the client has to
+user's data. 
+
+SOAP: API architecture known for standardized message formats
+
+REST: API architecture that centers around manipulating
+resources
+
+Resource: API term for a business noun like customer or order
+
+Endpoint: A URL that makes up part of an API. In REST, each
+resource gets its own endpoints
+
+Query String: A portion of the URL that is used to pass data to the
+server
+
+Query Parameters: A key-value pair found in the query string
+(topping=cheese)
+
+Pagination: Process of splitting up results into manageable
+chunks
